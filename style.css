@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background: #008037;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img.logo {
+    max-width: 120px;
+}
+
+
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 65vh;
+}
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:15vh;
+}
+section {
+    background-color: #f2f2f2; /* Gris claro */
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+}
+
+ul.vineta {
+    list-style: none; /* Remueve las viñetas predeterminadas */
+    padding-left: 0;
+}
+
+ul.vineta li {
+    position: relative; /* Posición relativa para posicionar la viñeta */
+    padding-left: 20px; /* Espacio para la viñeta */
+}
+
+ul.vineta li::before {
+    content: "\2022"; /* Código Unicode para la viñeta */
+    color: #ff6600; /* Color naranja para la viñeta */
+    font-weight: bold;
+    display: inline-block;
+    position: absolute; /* Posicionamiento absoluto dentro de li */
+    left: 0; /* Alinea a la izquierda */
+    top: 0; /* Alinea al inicio del texto */
+}
+footer {
+    background: #ff6600;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%);
+}
